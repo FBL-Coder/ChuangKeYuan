@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_build"
+    android:paddingBottom="@dimen/dp_10">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_teach_listview"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp_10"
+        fresco:roundedCornerRadius="@dimen/dp_12" />
+
+    <TextView
+        android:id="@+id/tv_teach_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:ellipsize="end"
+        android:maxWidth="@dimen/dp_180"
+        android:singleLine="true"
+        android:text="sadfasdf"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_15"
+        android:textSize="@dimen/sp_16"
+        android:maxWidth="@dimen/dp_200"
+        android:textColor="@color/black_title"
+        android:layout_below="@id/tv_teach_listview"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:id="@+id/ll_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_teach_listview"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/syntheticalmark"
+            android:textColor="@color/black_title"
+            android:textSize="@dimen/sp_14" />
+
+        <RatingBar
+            android:id="@+id/zonghe"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_3"
+            android:clickable="true"
+            android:numStars="5"
+            android:progressDrawable="@drawable/ratingbar_xing"
+            android:rating="2"
+            android:stepSize="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_hits_commnts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_ratingbar"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:src="@drawable/scan"/>
+        <TextView
+            android:id="@+id/detail_hits"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/black_title"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+        <ImageView
+            android:id="@+id/comment_iv"
+            android:layout_width="@dimen/dp_22"
+            android:layout_height="@dimen/dp_22"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:src="@drawable/commentcount" />
+        <TextView
+            android:id="@+id/detail_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textColor="@color/black_title"
+            />
+    </LinearLayout>
+
+    <View style="@style/GrayViewStyle" />
+
+</RelativeLayout>

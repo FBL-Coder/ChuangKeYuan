@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_teach" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_detail_pro"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_150"
+            android:layout_centerInParent="true"
+            android:background="@drawable/pro_dialog"
+            android:padding="@dimen/dp_5"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/pb_detail_pro"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_60" />
+
+                <TextView
+                    style="@style/AbnormalStyle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/abnormal6"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_teach"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+
+
+        <LinearLayout
+            android:id="@+id/ku_collect"
+            style="@style/AbnormalLinearLayoutStyle">
+
+            <ImageView style="@style/CryImageViewStyle" />
+
+            <TextView
+                style="@style/AbnormalStyle"
+                android:text="@string/abnormal3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ku_collect_yichang"
+            style="@style/AbnormalLinearLayoutStyle">
+
+            <ImageView style="@style/CryImageViewStyle" />
+
+            <TextView
+                style="@style/AbnormalStyle"
+                android:text="@string/abnormal4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ku_collect_denglu"
+            style="@style/AbnormalLinearLayoutStyle">
+
+            <ImageView style="@style/CryImageViewStyle" />
+
+            <TextView
+                style="@style/AbnormalStyle"
+                android:text="@string/abnormal5" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

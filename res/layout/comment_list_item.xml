@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/comment_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:text="综合得分：" />
+
+        <TextView
+            android:id="@+id/comment_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_30"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp_32"
+            android:textStyle="italic|bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/comment_item_time"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black_title"
+        android:layout_height="match_parent"
+        android:layout_gravity="right" />
+
+
+</LinearLayout>

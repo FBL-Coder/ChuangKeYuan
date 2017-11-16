@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_teach" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_school"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_115"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_material_xue"
+            style="@style/RelativeLayoutStyle"
+            android:background="@drawable/selector_build">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_xue"
+                style="@style/ImageViewStyle"
+                fresco:roundedCornerRadius="@dimen/dp_12" />
+
+            <TextView
+                android:id="@+id/tv_xue_title"
+                style="@style/TextViewTitleStyle" />
+
+            <TextView
+                android:id="@+id/tv_xue"
+                style="@style/TextViewDesStyle" />
+        </RelativeLayout>
+
+        <View style="@style/GrayViewStyle" />
+
+        <RelativeLayout
+            android:id="@+id/rl_material_xi"
+            style="@style/RelativeLayoutStyle"
+            android:background="@drawable/selector_build">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_xi"
+                style="@style/ImageViewStyle"
+                fresco:roundedCornerRadius="@dimen/dp_12" />
+
+            <TextView
+                android:id="@+id/tv_xi_title"
+                style="@style/TextViewTitleStyle" />
+
+            <TextView
+                android:id="@+id/tv_xi"
+                style="@style/TextViewDesStyle" />
+        </RelativeLayout>
+
+        <View style="@style/GrayViewStyle" />
+
+        <RelativeLayout
+            android:id="@+id/rl_material_chuang"
+            style="@style/RelativeLayoutStyle"
+            android:background="@drawable/selector_build">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_chuang"
+                style="@style/ImageViewStyle"
+                fresco:roundedCornerRadius="@dimen/dp_12" />
+
+            <TextView
+                android:id="@+id/tv_chuang_title"
+                style="@style/TextViewTitleStyle" />
+
+            <TextView
+                android:id="@+id/tv_chuang"
+                style="@style/TextViewDesStyle" />
+        </RelativeLayout>
+
+        <View style="@style/GrayViewStyle" />
+    </LinearLayout>
+</LinearLayout>

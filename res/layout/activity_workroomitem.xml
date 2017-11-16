@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_teach" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_school"
+        style="@style/CommonImageViewStyle"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_school_material"
+            style="@style/RelativeLayoutStyle"
+            android:background="@drawable/selector_build">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_material"
+                style="@style/ImageViewStyle" />
+
+            <TextView
+                android:id="@+id/tv_material"
+                style="@style/TextViewTitleStyle" />
+
+            <TextView
+                android:id="@+id/tv_material1"
+                style="@style/TextViewDesStyle" />
+        </RelativeLayout>
+
+        <View
+            style="@style/GrayViewStyle"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_school_diy"
+            style="@style/RelativeLayoutStyle"
+            android:background="@drawable/selector_build">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_diy"
+                style="@style/ImageViewStyle" />
+
+            <TextView
+                android:id="@+id/tv_diy"
+                style="@style/TextViewTitleStyle" />
+
+            <TextView
+                android:id="@+id/tv_diy1"
+                style="@style/TextViewDesStyle" />
+        </RelativeLayout>
+
+        <View
+            style="@style/GrayViewStyle" />
+
+        <RelativeLayout
+            android:id="@+id/rl_school_case"
+            style="@style/RelativeLayoutStyle"
+            android:background="@drawable/selector_build">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_case"
+                style="@style/ImageViewStyle" />
+
+            <TextView
+                android:id="@+id/tv_case"
+                style="@style/TextViewTitleStyle" />
+
+            <TextView
+                android:id="@+id/tv_case1"
+                style="@style/TextViewDesStyle" />
+        </RelativeLayout>
+
+        <View
+            style="@style/GrayViewStyle"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_school_4"
+            style="@style/RelativeLayoutStyle"
+            android:background="@drawable/selector_build">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_4"
+                style="@style/ImageViewStyle" />
+
+            <TextView
+                android:id="@+id/tv_4"
+                style="@style/TextViewTitleStyle" />
+
+            <TextView
+                android:id="@+id/tv_41"
+                style="@style/TextViewDesStyle" />
+        </RelativeLayout>
+
+        <View
+            style="@style/GrayViewStyle"/>
+    </LinearLayout>
+</LinearLayout>

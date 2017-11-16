@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f2f2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+        <include layout="@layout/ease_commom_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/Application_and_notify"
+            android:textColor="@color/bottom_text_color_normal"
+            android:textSize="@dimen/sp_18" />
+    </RelativeLayout>
+    <View
+        style="@style/GrayViewStyle"/>
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:descendantFocusability="afterDescendants"
+        android:divider="@color/divider_list"
+        android:dividerHeight="@dimen/dp_1"
+        android:cacheColorHint="@color/transparent"
+        android:fastScrollEnabled="true" />
+
+</LinearLayout>

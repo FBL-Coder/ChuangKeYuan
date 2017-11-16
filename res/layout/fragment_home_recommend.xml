@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_detail_pro"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/pb_detail_pro"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60" />
+
+            <TextView
+               style="@style/AbnormalStyle"
+                android:layout_centerVertical="true"
+                android:text="@string/abnormal6"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.yitong.ChuangKeYuan.widget.SuperSwipeRefreshLayout
+        android:id="@+id/SwipeRefreshLayout_xiu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ScrollView
+            android:id="@+id/recom_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_140">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_fragment_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_35"
+                        android:layout_gravity="bottom"
+                        android:background="@color/color_66212121"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/sp_14" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_3">
+
+                            <View
+                                android:id="@+id/v_dot0"
+                                style="@style/DotStyle"
+                                android:background="@drawable/dot_focused" />
+
+                            <View
+                                android:id="@+id/v_dot1"
+                                style="@style/DotStyle" />
+
+                            <View
+                                android:id="@+id/v_dot2"
+                                style="@style/DotStyle" />
+
+                            <View
+                                android:id="@+id/v_dot3"
+                                style="@style/DotStyle" />
+
+                            <View
+                                android:id="@+id/v_dot4"
+                                style="@style/DotStyle" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <com.yitong.ChuangKeYuan.widget.MyListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8"
+                    android:background="@android:color/white"
+                    android:focusable="true"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </ScrollView>
+    </com.yitong.ChuangKeYuan.widget.SuperSwipeRefreshLayout>
+</RelativeLayout>

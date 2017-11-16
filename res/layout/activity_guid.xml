@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guid_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <Button
+        android:id="@+id/btn_guid_goHome"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="wrap_content"
+        android:background="@drawable/experience"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_60"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/btn_guid_goHome1"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="wrap_content"
+        android:background="@drawable/experience1"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_60"
+        android:visibility="gone"
+        />
+</RelativeLayout>

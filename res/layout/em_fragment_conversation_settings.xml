@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <com.easemob.easeui.widget.EaseTitleBar
+        android:id="@+id/set_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarTitle="@string/set" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_30"
+                    android:gravity="bottom|left"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:text="@string/notify"
+                    android:textColor="@color/common_bottom_bar_selected_bg" />
+
+                <TextView
+                    style="@style/GrayViewStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_switch_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:background="@drawable/em_btn_bottom_selector"
+                    android:padding="@dimen/dp_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:text="@string/newnotify"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_14"
+                        android:typeface="serif" />
+
+                    <com.easemob.easeui.widget.EaseSwitchButton
+                        android:id="@+id/switch_notification"
+                        style="@style/EmSettingsStyle" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@color/color_E6E6E6" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_switch_sound"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:background="@drawable/em_btn_bottom_selector"
+                    android:padding="@dimen/dp_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:text="@string/voice"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_14"
+                        android:typeface="serif" />
+
+                    <com.easemob.easeui.widget.EaseSwitchButton
+                        android:id="@+id/switch_sound"
+                        style="@style/EmSettingsStyle" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@color/color_E6E6E6" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_switch_vibrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:background="@drawable/em_btn_bottom_selector"
+                    android:padding="@dimen/dp_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:text="@string/shake"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_14"
+                        android:typeface="serif" />
+
+                    <com.easemob.easeui.widget.EaseSwitchButton
+                        android:id="@+id/switch_vibrate"
+                        style="@style/EmSettingsStyle" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_30"
+                        android:gravity="bottom|left"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:text="@string/chatset"
+                        android:textColor="@color/common_bottom_bar_selected_bg" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="@color/View_gray" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_switch_speaker"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:background="@drawable/em_btn_bottom_selector"
+                    android:padding="@dimen/dp_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:text="@string/yangshengqi"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_14"
+                        android:typeface="serif" />
+
+                    <com.easemob.easeui.widget.EaseSwitchButton
+                        android:id="@+id/switch_speaker"
+                        style="@style/EmSettingsStyle" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@color/View_gray" />
+
+                <LinearLayout
+                    android:id="@+id/ll_black_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:background="@drawable/em_btn_bottom_selector"
+                    android:padding="@dimen/dp_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:text="@string/book_black"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>
+
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@color/btn_gray_normal" />
+
+                <LinearLayout
+                    android:id="@+id/ll_user_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:background="@drawable/em_btn_bottom_selector"
+                    android:padding="@dimen/dp_10" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:text="@string/title_user_profile"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/sp_14" />
+                </LinearLayout>-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@color/View_gray" />
+
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/dp_1"-->
+                <!--android:layout_marginLeft="@dimen/dp_10"-->
+                <!--android:layout_marginRight="@dimen/dp_10"-->
+                <!--android:background="@color/btn_gray_normal" />-->
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textview4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/color_E6E6E6" />
+
+            <RelativeLayout
+                android:id="@+id/rl_switch_chatroom_owner_leave"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:text="@string/chatroom_allow_owner_leave"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_14"
+                    android:typeface="serif" />
+
+                <com.easemob.easeui.widget.EaseSwitchButton
+                    android:id="@+id/switch_owner_leave"
+                    style="@style/EmSettingsStyle" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_switch_adaptive_video_encode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:padding="@dimen/dp_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:text="@string/adaptive_video_encode"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_14"
+                    android:typeface="serif" />
+
+                <com.easemob.easeui.widget.EaseSwitchButton
+                    android:id="@+id/switch_adaptive_video_encode"
+                    style="@style/EmSettingsStyle" />
+            </RelativeLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@color/bai"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:background="@drawable/em_btn_style_alert_dialog_special"
+                    android:text="@string/button_logout"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp_18" />
+            </LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_teach" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_5"
+                android:text="问卷名称 : "
+                android:textSize="@dimen/sp_18" />
+
+            <EditText
+                android:id="@+id/research_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rect_edittext"
+                android:padding="@dimen/dp_5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/dp_15">
+
+            <TextView
+                android:id="@+id/class_select"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_15"
+                android:layout_weight="1.5"
+                android:background="@drawable/rect_gray"
+                android:text="全部"
+                android:padding="@dimen/dp_10"
+                android:textColor="@color/black_title"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/authority_select_btn"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/em_button_login_bg"
+                android:gravity="center"
+                android:text="权限选择"
+                android:textColor="@color/guidbtnnormal"
+                android:textSize="@dimen/sp_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1">
+
+            <ExpandableListView
+                android:id="@+id/resrarch_data_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:groupIndicator="@null"></ExpandableListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2">
+
+        <Button
+            android:id="@+id/add_research_item"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/em_button_login_bg"
+            android:text="添加题目"
+            android:textColor="@color/selector_research_text"
+            android:textSize="@dimen/sp_18" />
+
+        <Button
+            android:id="@+id/add_research_up"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_weight="1"
+            android:background="@drawable/em_button_login_bg"
+            android:text="保存提交"
+            android:textColor="@color/selector_research_text"
+            android:textSize="@dimen/sp_18" />
+    </LinearLayout>
+</LinearLayout>

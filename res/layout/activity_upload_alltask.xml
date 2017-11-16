@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_teach" />
+
+    <View style="@style/GrayViewStyle" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="作业标题"
+                    android:textColor="@color/color_8e8e93"
+                    android:textSize="@dimen/sp_14" />
+
+                <EditText
+                    android:id="@+id/des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:background="@drawable/rect_gray"
+                    android:hint="输入标题"
+                    android:padding="@dimen/dp_10"
+                    android:textColor="@color/black_title"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/dp_15">
+
+                <TextView
+                    android:id="@+id/over_time"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/rect_gray"
+                    android:hint="点击右侧按钮选择时间"
+                    android:padding="@dimen/dp_10"
+                    android:textColor="@color/black_title"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/over_time_btn"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/em_button_login_bg"
+                    android:gravity="center"
+                    android:text="结束时间"
+                    android:textColor="@color/guidbtnnormal"
+                    android:textSize="@dimen/sp_18" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/dp_15">
+
+                <TextView
+                    android:id="@+id/class_select"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/rect_gray"
+                    android:text="全部"
+                    android:padding="@dimen/dp_10"
+                    android:textColor="@color/black_title"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/authority_select_btn"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/em_button_login_bg"
+                    android:gravity="center"
+                    android:text="权限选择"
+                    android:textColor="@color/guidbtnnormal"
+                    android:textSize="@dimen/sp_18" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="作业详情"
+                    android:textColor="@color/color_8e8e93"
+                    android:textSize="@dimen/sp_14" />
+
+                <EditText
+                    android:id="@+id/content_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_100"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:background="@drawable/rect_gray"
+                    android:gravity="top"
+                    android:hint="输入作业详情"
+                    android:padding="@dimen/dp_5"
+                    android:singleLine="false"
+                    android:textColor="@color/bottom_text_color_normal"
+                    android:textSize="@dimen/sp_16" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/UploadTextViewStyle"
+                android:text="@string/upload_title4"
+                android:textColor="@color/bottom_text_color_normal"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                style="@style/UploadTextViewStyle"
+                android:text="@string/upload_des6"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp_14" />
+
+
+            <com.yitong.ChuangKeYuan.widget.NoScrollGridView
+                android:id="@+id/noScrollGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:horizontalSpacing="3dp"
+                android:listSelector="#00000000"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp" />
+
+            <Button
+                android:id="@+id/upload"
+                style="@style/RedButtonStyle"
+                android:layout_margin="@dimen/dp_10"
+                android:background="@drawable/em_btn_style_alert_dialog_special"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:text="上    传"
+                android:textColor="@color/bai"
+                android:textSize="@dimen/sp_24"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

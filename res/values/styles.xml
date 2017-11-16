@@ -1,0 +1,471 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme">
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+
+    <!--底边栏的样式-->
+    <style name="RadioButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">@dimen/dp_0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:textColor">@color/color_radiobutton_text</item>
+    </style>
+
+    <!--页签的样式-->
+    <style name="TabRadioButtonStyle">
+        <item name="android:layout_width">@dimen/rdo2</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">#34495e</item>
+        <item name="android:background">@drawable/radiobtn_selector</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <!--点的样式-->
+    <style name="DotStyle">
+        <item name="android:layout_width">@dimen/dp_5</item>
+        <item name="android:layout_height">@dimen/dp_5</item>
+        <item name="android:background">@drawable/dot_normal</item>
+        <item name="android:layout_marginLeft">@dimen/dp_1_5</item>
+        <item name="android:layout_marginRight">@dimen/dp_1_5</item>
+    </style>
+
+    <!--共同的ImageView-->
+    <style name="CommonImageViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_125</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!--建设方案ImageView-->
+    <style name="BuildImageViewStyle">
+        <item name="android:layout_width">@dimen/dp_100</item>
+        <item name="android:layout_height">@dimen/dp_100</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_margin">@dimen/dp_10</item>
+    </style>
+
+    <!--建设方案TextViewTitle-->
+    <style name="BuildTextViewTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_10</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:maxWidth">@dimen/dp_180</item>
+        <item name="android:textSize">@dimen/dp_15</item>
+    </style>
+
+    <!--建设方案TextViewDes-->
+    <style name="BuildTextViewDesStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_5</item>
+        <item name="android:layout_marginLeft">@dimen/dp_10</item>
+        <item name="android:textSize">@dimen/dp_15</item>
+    </style>
+
+    <!--创客导师 RelativeLayout-->
+    <style name="TutorRelativeLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/selector_build</item>
+    </style>
+
+    <!--创客导师 TextView-->
+    <style name="TutorTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_40</item>
+        <item name="android:layout_marginLeft">@dimen/dp_10</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!--班级小创客TextView-->
+    <style name="ClassTextViewStyle">
+        <item name="android:layout_width">@dimen/dp_100</item>
+        <item name="android:layout_height">@dimen/dp_100</item>
+    </style>
+    <!--我的任务单RadioButton-->
+    <style name="TaskRadioButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_task</item>
+        <item name="android:textColor">@color/color_task_text</item>
+        <item name="android:textSize">@dimen/sp_20</item>
+    </style>
+
+    <!--GridView-->
+    <style name="GridViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/dp_20</item>
+        <item name="android:clipToPadding">true</item>
+        <item name="android:numColumns">2</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <!--三条item  TextViewTitle-->
+    <style name="TextViewTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_10</item>
+        <item name="android:layout_marginTop">@dimen/dp_20</item>
+        <item name="android:maxWidth">@dimen/dp_200</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <!--三条item  TextViewDes-->
+    <style name="TextViewDesStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_10</item>
+        <item name="android:layout_marginTop">@dimen/dp_55</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:maxWidth">@dimen/dp_180</item>
+        <item name="android:textColor">#707070</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <!--三条item  ImageView-->
+    <style name="ImageViewStyle">
+        <item name="android:layout_width">@dimen/dp_120</item>
+        <item name="android:layout_height">@dimen/dp_100</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_margin">@dimen/dp_10</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--三条item  RelativeLayout-->
+    <style name="RelativeLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!-- 星级评论  RatingBar-->
+    <style name="RatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar</item>
+        <item name="android:maxHeight">30dp</item>
+        <item name="android:maxWidth">20dp</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:minWidth">20dp</item>
+    </style>
+
+    <!-- 下拉菜单popview的样式  RadioButton-->
+    <style name="PopViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dp_8</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:textColor">@color/colortext_normal</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/selector_pop_bg</item>
+    </style>
+    <!-- 分享添加的样式  ImageView-->
+    <style name="ShareStyle">
+        <item name="android:layout_width">@dimen/dp_0</item>
+        <item name="android:layout_height">@dimen/dp_100</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">@dimen/dp_15</item>
+        <item name="android:layout_marginLeft">@dimen/dp_15</item>
+        <item name="android:layout_marginRight">@dimen/dp_15</item>
+        <item name="android:src">@drawable/tianjia</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:padding">@dimen/dp_5</item>
+    </style>
+
+    <!-- 上传 EditText 的样式  EditText-->
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_10</item>
+        <item name="android:layout_marginRight">@dimen/dp_10</item>
+        <item name="android:minLines">2</item>
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:background">@drawable/rect_gray</item>
+        <item name="android:padding">@dimen/dp_5</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <!-- 上传添加的样式  -->
+    <style name="UploadImageViewStyle">
+        <item name="android:layout_width">@dimen/dp_100</item>
+        <item name="android:layout_height">@dimen/dp_100</item>
+        <item name="android:layout_marginTop">@dimen/dp_20</item>
+        <item name="android:layout_marginLeft">@dimen/dp_30</item>
+        <item name="android:src">@drawable/tianjia</item>
+    </style>
+
+    <!-- 上传文件名称的样式  -->
+    <style name="UploadNameStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dp_35</item>
+        <item name="android:layout_marginTop">@dimen/dp_30</item>
+        <item name="android:layout_marginLeft">@dimen/dp_10</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:text">@string/upload_name</item>
+    </style>
+
+    <!-- 上传输入文件名称的样式  -->
+    <style name="UploadName1Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_30</item>
+        <item name="android:layout_marginLeft">@dimen/dp_5</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <!-- 上传文件大小的样式  -->
+    <style name="UploadSizeStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_20</item>
+        <item name="android:layout_marginLeft">@dimen/dp_10</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:text">@string/upload_size</item>
+    </style>
+
+    <!-- 上传输入文件大小的样式  -->
+    <style name="UploadSize1Style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_20</item>
+        <item name="android:layout_marginLeft">@dimen/dp_5</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <!-- 上传结果的样式  -->
+    <style name="UploadResultStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_100</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!-- 上传TextView的样式  -->
+    <style name="UploadTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_10</item>
+        <item name="android:layout_marginTop">@dimen/dp_5</item>
+        <item name="android:padding">@dimen/dp_5</item>
+    </style>
+
+    <!--上传，发布，提交等按钮的样式-->
+    <style name="RedButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_50</item>
+        <item name="android:layout_margin">@dimen/dp_5</item>
+
+    </style>
+
+    <!--我的模块 RelativeLayout的样式-->
+    <style name="MyRelativeLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/bai</item>
+        <item name="android:layout_marginTop">@dimen/dp_5</item>
+    </style>
+    <!--我的模块 在线时间统计和论坛发帖统计的样式-->
+    <style name="MyTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/bai</item>
+        <item name="android:padding">@dimen/dp_8</item>
+        <item name="android:textColor">@color/bottom_text_color_normal</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+    <!--我的模块 输入在线时间统计和论坛发帖统计的样式-->
+    <style name="MyInputTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dp_10</item>
+        <item name="android:textColor">@color/color_8e8e93</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <!--异常，暂无数据，没有开启网络等的LinearLayout样式-->
+    <style name="AbnormalLinearLayoutStyle">
+        <item name="android:layout_width">@dimen/dp_150</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!--异常，暂无数据，没有开启网络等的样式-->
+    <style name="AbnormalStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black_title</item>
+    </style>
+    <!--dialog_comment的样式-->
+    <style name="DialogCommentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_adapter_item_bg</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">@dimen/dp_15</item>
+        <item name="android:paddingLeft">@dimen/dp_10</item>
+        <item name="android:paddingTop">@dimen/dp_15</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/color_232323</item>
+    </style>
+    <!--灰线的样式-->
+    <style name="GrayViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_1_5</item>
+        <item name="android:background">@color/View_gray</item>
+    </style>
+    <!--浅灰线的样式-->
+    <style name="lightGrayViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_1</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+    <!--图（哭泣）的样式-->
+    <style name="CryImageViewStyle">
+        <item name="android:layout_width">@dimen/dp_100</item>
+        <item name="android:layout_height">@dimen/dp_100</item>
+        <item name="android:src">@drawable/kuqi</item>
+    </style>
+    <!--em_activity_diagnose 的样式-->
+    <style name="EmDialogStyle">
+        <item name="android:layout_width">@dimen/dp_0</item>
+        <item name="android:layout_height">@dimen/dp_40</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/gray_normal</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+    <!--em_fragment_conversation_settings 中开关的样式-->
+    <style name="EmSettingsStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--微信朋友圈-->
+    <style name="social_pop_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+    <!--教师，家长详情页面样式-->
+    <style name="TVStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_8</item>
+        <item name="android:layout_marginRight">@dimen/dp_8</item>
+        <item name="android:paddingBottom">@dimen/dp_10</item>
+        <item name="android:paddingTop">@dimen/dp_10</item>
+        <item name="android:textColor">@color/black_title</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+    <!--自定义dialog的样式-->
+    <style name="comment_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!-- 显示对话框时当前的屏幕是否变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="customDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:background">@color/bai</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--dialog_find_layout中LinearLayout的样式-->
+    <style name="DialogLinearLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/selector_dialog_btn</item>
+    </style>
+
+    <!--dialog_find_layout中TextView的样式-->
+    <style name="DialogTextViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/dp_10</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <!--dialog_find_layout中ImageView的样式-->
+    <style name="DialogImageViewStyle">
+        <item name="android:layout_width">@dimen/dp_25</item>
+        <item name="android:layout_height">@dimen/dp_25</item>
+        <item name="android:layout_marginLeft">@dimen/dp_8</item>
+        <item name="android:layout_marginRight">@dimen/dp_8</item>
+    </style>
+    <!--dialog_normal_layout中Button的样式-->
+    <style name="DialogButtonStyle">
+        <item name="android:layout_width">@dimen/dp_0</item>
+        <item name="android:layout_height">@dimen/dp_35</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/selector_dialog_btn</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+    //进度条样式颜色改变；
+
+    <style name="ProgressBar_Mini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">@dimen/dp_50</item>
+        <item name="android:minHeight">@dimen/dp_5</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/progressbar_mini</item>
+    </style>
+
+    <!--<style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:textColor">@color/black_title</item>
+    </style>-->
+</resources>

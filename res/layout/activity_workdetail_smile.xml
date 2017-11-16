@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ku_task_yichang"
+        style="@style/AbnormalLinearLayoutStyle">
+
+        <ImageView style="@style/CryImageViewStyle" />
+
+        <TextView
+            android:id="@+id/ku_tv"
+            style="@style/AbnormalStyle"
+            android:text="@string/abnormal1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/title_teach" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_detail_pro"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/pb_detail_pro"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_60" />
+
+                <TextView
+                    style="@style/AbnormalStyle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/abnormal6"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_detail_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:background="@color/bai"
+                android:scrollbars="none">
+
+
+                <com.tencent.smtt.sdk.WebView
+                    android:id="@+id/wv_detail_webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/dp_120"
+                    android:hardwareAccelerated="true" />
+
+
+            </ScrollView>
+
+            <View style="@style/GrayViewStyle" />
+
+            <RelativeLayout
+                android:id="@+id/detail_comment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:layout_alignParentBottom="true"
+                android:background="@color/bai"
+                >
+
+                <ImageView
+                    android:id="@+id/pinlun"
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp_2"
+                    android:src="@drawable/pinlun" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_toRightOf="@id/pinlun"
+                    android:text="@string/syntheticalmark3"
+                    android:textColor="@color/color_99000000"
+                    android:textSize="@dimen/sp_16" />
+
+
+                <ImageView
+                    android:id="@+id/ping"
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/dp_2"
+                    android:src="@drawable/ping" />
+
+                <TextView
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="@string/cancel"
+                    android:textColor="@color/color_99000000"
+                    android:textSize="@dimen/sp_16"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/fen"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edittext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_5"
+                            android:background="@drawable/rect_gray"
+                            android:padding="@dimen/dp_10" />
+
+                        <LinearLayout
+                            android:id="@+id/xing"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RatingBar
+                                android:id="@+id/ratingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/dp_10"
+                                android:clickable="true"
+                                android:numStars="5"
+                                android:progressDrawable="@drawable/ratingbar"
+                                android:stepSize="1" />
+
+                            <Button
+                                android:id="@+id/btn_tijiao_comment"
+                                style="@style/RedButtonStyle"
+                                android:background="@drawable/em_btn_style_alert_dialog_special"
+                                android:gravity="center"
+                                android:text="提    交"
+                                android:textColor="@color/bai"
+                                android:textSize="@dimen/sp_30"
+                                 />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

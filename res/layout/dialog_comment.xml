@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/copyTv"
+        style="@style/DialogCommentStyle"
+        android:text="@string/copy"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@drawable/basic_skin_icon_dot_gray"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/deleteTv"
+        style="@style/DialogCommentStyle"
+        android:text="@string/delete"
+       />
+
+</LinearLayout>

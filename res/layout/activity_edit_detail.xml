@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_teach" />
+
+    <View style="@style/GrayViewStyle" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/des"
+                style="@style/EditTextStyle"
+                android:hint="@string/uploadtitle"
+
+                />
+
+            <EditText
+                android:id="@+id/content_up"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_120"
+                android:layout_margin="@dimen/dp_12"
+                android:background="@drawable/rect_gray"
+                android:gravity="top"
+                android:hint="@string/uploadcontent"
+                android:padding="@dimen/dp_5"
+                android:singleLine="false"
+                android:textColor="@color/bottom_text_color_normal"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                style="@style/UploadTextViewStyle"
+                android:text="@string/upload_title2"
+                android:textColor="@color/bottom_text_color_normal"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                style="@style/UploadTextViewStyle"
+                android:text="@string/upload_des5"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/upload11"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_2"
+                    android:layout_weight="1"
+                    fresco:placeholderImage="@drawable/video"
+                    fresco:placeholderImageScaleType="fitCenter"
+
+                    fresco:failureImage="@drawable/kuqi_fail"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:progressBarAutoRotateInterval="1500"
+                    fresco:progressBarImage="@drawable/wating"
+                    fresco:progressBarImageScaleType="centerInside"/>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/upload12"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_2"
+                    android:layout_weight="1"
+                    fresco:placeholderImage="@drawable/audio"
+                    fresco:placeholderImageScaleType="fitCenter"
+
+                    fresco:failureImage="@drawable/kuqi_fail"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:progressBarAutoRotateInterval="1500"
+                    fresco:progressBarImage="@drawable/wating"
+                    fresco:progressBarImageScaleType="centerInside"/>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/upload13"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_2"
+                    android:layout_weight="1"
+                    fresco:placeholderImage="@drawable/file"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:failureImage="@drawable/kuqi_fail"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:progressBarAutoRotateInterval="1500"
+                    fresco:progressBarImage="@drawable/wating"
+                    fresco:progressBarImageScaleType="centerInside"/>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/upload1"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    fresco:placeholderImage="@drawable/photo"
+                    fresco:placeholderImageScaleType="fitCenter"
+
+                    fresco:failureImage="@drawable/kuqi_fail"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:progressBarAutoRotateInterval="1500"
+                    fresco:progressBarImage="@drawable/wating"
+                    fresco:progressBarImageScaleType="centerInside"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_upload2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/upload2"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    fresco:placeholderImage="@drawable/photo"
+                    fresco:placeholderImageScaleType="fitCenter"
+
+                    fresco:failureImage="@drawable/kuqi_fail"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:progressBarAutoRotateInterval="1500"
+                    fresco:progressBarImage="@drawable/wating"
+                    fresco:progressBarImageScaleType="centerInside"/>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/upload3"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    fresco:placeholderImage="@drawable/photo"
+                    fresco:placeholderImageScaleType="fitCenter"
+
+                    fresco:failureImage="@drawable/kuqi_fail"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:progressBarAutoRotateInterval="1500"
+                    fresco:progressBarImage="@drawable/wating"
+                    fresco:progressBarImageScaleType="centerInside"/>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/upload4"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    fresco:placeholderImage="@drawable/photo"
+                    fresco:placeholderImageScaleType="fitCenter"
+
+                    fresco:failureImage="@drawable/kuqi_fail"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:progressBarAutoRotateInterval="1500"
+                    fresco:progressBarImage="@drawable/wating"
+                    fresco:progressBarImageScaleType="centerInside"/>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/upload5"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    fresco:placeholderImage="@drawable/photo"
+                    fresco:placeholderImageScaleType="fitCenter"
+
+                    fresco:failureImage="@drawable/kuqi_fail"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:progressBarAutoRotateInterval="1500"
+                    fresco:progressBarImage="@drawable/wating"
+                    fresco:progressBarImageScaleType="centerInside"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_upload3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/upload6"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    fresco:placeholderImage="@drawable/photo"
+                    fresco:placeholderImageScaleType="fitCenter"
+
+                    fresco:failureImage="@drawable/kuqi_fail"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:progressBarAutoRotateInterval="1500"
+                    fresco:progressBarImage="@drawable/wating"
+                    fresco:progressBarImageScaleType="centerInside"/>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/upload7"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:placeholderImage="@drawable/photo"
+
+                    fresco:failureImage="@drawable/kuqi_fail"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:progressBarAutoRotateInterval="1500"
+                    fresco:progressBarImage="@drawable/wating"
+                    fresco:progressBarImageScaleType="centerInside"
+                    />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/upload8"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    fresco:placeholderImage="@drawable/photo"
+                    fresco:placeholderImageScaleType="fitCenter"
+
+                    fresco:failureImage="@drawable/kuqi_fail"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:progressBarAutoRotateInterval="1500"
+                    fresco:progressBarImage="@drawable/wating"
+                    fresco:progressBarImageScaleType="centerInside"/>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/upload9"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    fresco:placeholderImage="@drawable/photo"
+                    fresco:placeholderImageScaleType="fitCenter"
+
+                    fresco:failureImage="@drawable/kuqi_fail"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:progressBarAutoRotateInterval="1500"
+                    fresco:progressBarImage="@drawable/wating"
+                    fresco:progressBarImageScaleType="centerInside"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_upload4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/upload10"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    fresco:placeholderImage="@drawable/photo"
+                    fresco:placeholderImageScaleType="fitCenter"
+
+                    fresco:failureImage="@drawable/kuqi_fail"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:progressBarAutoRotateInterval="1500"
+                    fresco:progressBarImage="@drawable/wating"
+                    fresco:progressBarImageScaleType="centerInside"/>
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:visibility="invisible"
+                    fresco:placeholderImage="@drawable/photo"
+                    fresco:placeholderImageScaleType="fitCenter"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/uploadResult"
+                style="@style/UploadResultStyle" />
+
+            <Button
+                android:id="@+id/upload"
+                style="@style/RedButtonStyle"
+                android:layout_margin="@dimen/dp_10"
+                android:background="@drawable/em_btn_style_alert_dialog_special"
+                android:gravity="center"
+                android:padding="@dimen/dp_5"
+                android:text="确  认  修  改"
+                android:textColor="@color/bai"
+                android:textSize="@dimen/sp_30" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,2 @@
+include ':EaseUI', ':mypicker', 'Editor', ':taggroup'
+//project(':EaseUI').projectDir = new File('../easeui')

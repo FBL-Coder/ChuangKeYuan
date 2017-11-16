@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_teach" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n        创客园是上海易同科技股份有限公司致力研发的一款面向幼儿园的移动端手机软件，是连接幼儿园老师和幼儿家长的桥梁。\n\n        它里面的创客园模块中包含有推荐、建设方案、创客导师、创客空间、创客做中学、创客秀和调查问卷七个项目，在这里家长不仅可以看到关于幼儿园、教师的信息，还可以看到孩子完成作业和参加活动的情况，随时掌握孩子的动态。\n\n        通讯录模块让家长和家长，家长和老师成为朋友，交流信息方便又快捷。\n\n        发现模块里可以看到好友动态以及分享的内容，互相学习，互相分享，共同进步。"
+        android:textColor="@color/black_title"
+        android:textSize="@dimen/sp_16"
+        android:layout_margin="@dimen/dp_10"
+        android:padding="@dimen/dp_10"
+        />
+</LinearLayout>

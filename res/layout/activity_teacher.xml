@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_detail_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_150"
+        android:layout_centerInParent="true"
+        android:background="@drawable/pro_dialog"
+        android:padding="@dimen/dp_5"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/pb_detail_pro"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60" />
+
+            <TextView
+                style="@style/AbnormalStyle"
+                android:layout_centerVertical="true"
+                android:text="@string/abnormal6"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_teach" />
+
+
+        <com.yitong.ChuangKeYuan.widget.SuperSwipeRefreshLayout
+            android:id="@+id/SwipeRefreshLayout_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scrollview_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/sdv_teacherlist"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_125"
+                        />
+
+                    <com.yitong.ChuangKeYuan.widget.MyListView
+                        android:id="@+id/lv_teacher"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none" />
+                </LinearLayout>
+            </ScrollView>
+        </com.yitong.ChuangKeYuan.widget.SuperSwipeRefreshLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ku_build_yichang"
+        style="@style/AbnormalLinearLayoutStyle">
+
+        <ImageView
+            style="@style/CryImageViewStyle"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            style="@style/AbnormalStyle"
+            android:text="@string/abnormal1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ku_build_nodata"
+        style="@style/AbnormalLinearLayoutStyle">
+
+        <ImageView
+            style="@style/CryImageViewStyle"/>
+
+        <TextView
+            style="@style/AbnormalStyle"
+            android:text="@string/abnormal2" />
+    </LinearLayout>
+
+</RelativeLayout>

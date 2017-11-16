@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yitong.ChuangKeYuan.widget.SuperSwipeRefreshLayout
+            android:id="@+id/SwipeRefreshLayout_research"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scrollview_research"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/research_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_120"
+                        android:visibility="gone" />
+
+                    <com.yitong.ChuangKeYuan.widget.MyListView
+                        android:id="@+id/lv_research"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none" />
+                </LinearLayout>
+            </ScrollView>
+        </com.yitong.ChuangKeYuan.widget.SuperSwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/ku_research_yichang"
+            style="@style/AbnormalLinearLayoutStyle">
+
+            <ImageView style="@style/CryImageViewStyle" />
+
+            <TextView
+                style="@style/AbnormalStyle"
+                android:text="@string/abnormal4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ku_research_nodata"
+            style="@style/AbnormalLinearLayoutStyle">
+
+            <ImageView style="@style/CryImageViewStyle" />
+
+            <TextView
+                style="@style/AbnormalStyle"
+                android:text="没找到数据..." />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/research_add"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:src="@drawable/selector_add_wenzhang"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:visibility="gone"
+        />
+</FrameLayout>

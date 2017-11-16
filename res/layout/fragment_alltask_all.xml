@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_detail_pro"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200"
+            android:layout_centerInParent="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/pb_detail_pro"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_60" />
+
+                <TextView
+                    style="@style/AbnormalStyle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/abnormal6"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.yitong.ChuangKeYuan.widget.SuperSwipeRefreshLayout
+            android:id="@+id/SwipeRefreshLayout_task"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scrollview_task"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.yitong.ChuangKeYuan.widget.MyListView
+                        android:id="@+id/lv_task"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0"
+                        android:layout_weight="1"
+                        android:scrollbars="none" />
+                </LinearLayout>
+            </ScrollView>
+        </com.yitong.ChuangKeYuan.widget.SuperSwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/ku_task_yichang"
+            style="@style/AbnormalLinearLayoutStyle">
+
+            <ImageView style="@style/CryImageViewStyle" />
+
+            <TextView
+                style="@style/AbnormalStyle"
+                android:text="@string/abnormal1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ku_task_nodata"
+            style="@style/AbnormalLinearLayoutStyle">
+
+            <ImageView style="@style/CryImageViewStyle" />
+
+            <TextView
+                style="@style/AbnormalStyle"
+                android:text="@string/abnormal2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ku_task_denglu"
+            style="@style/AbnormalLinearLayoutStyle">
+
+            <ImageView style="@style/CryImageViewStyle" />
+
+            <TextView
+                style="@style/AbnormalStyle"
+                android:text="@string/abnormal9" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

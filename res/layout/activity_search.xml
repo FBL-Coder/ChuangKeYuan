@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_70"
+        android:background="@color/help_button_view">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_40">
+
+            <EditText
+                android:id="@+id/search_edt"
+                android:layout_width="@dimen/dp_220"
+                android:layout_height="@dimen/dp_40"
+                android:background="@drawable/rect_gray"
+                android:drawableLeft="@drawable/sousuo"
+                android:hint="@string/keywords"
+                android:textSize="@dimen/sp_16" />
+
+            <ImageView
+                android:id="@+id/iv_search_clear"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_alignRight="@id/search_edt"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:src="@drawable/cha"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/btn_search_back"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/back" />
+
+        <Button
+            android:id="@+id/btn_search_ok"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_35"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight= "@dimen/dp_10"
+            android:background="@drawable/em_button_login_bg"
+            android:text="@string/search"
+            android:textColor="@color/bai" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_search_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:visibility="visible"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_search_pro"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/pb_search_pro"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_60" />
+
+                <TextView
+                    style="@style/AbnormalStyle"
+                    android:layout_centerVertical="true"
+                    android:text="@string/abnormal6"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/error_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kuqi" />
+
+
+            <TextView
+                style="@style/AbnormalStyle"
+                android:text="@string/abnormal7"
+                android:textColor="@color/gray_normal"
+                android:textSize="@dimen/sp_18" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

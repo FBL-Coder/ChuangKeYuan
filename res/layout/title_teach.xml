@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/include_rl"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_48"
+    android:background="@color/bai"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_teach_back"
+        android:layout_width="@dimen/dp_35"
+        android:layout_height="@dimen/dp_48"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dp_4"
+        android:background="@drawable/ease_common_tab_bg"
+        android:src="@drawable/back" />
+
+<!--***********************-->
+    <ImageView
+        android:id="@+id/iv_teach_edit"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_48"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_60"
+        android:background="@drawable/ease_common_tab_bg"
+        android:src="@drawable/bianji" />
+
+
+    <TextView
+        android:id="@+id/tv_teach_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/dp_15"
+        android:ellipsize="end"
+        android:maxEms="10"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:textColor="@color/black_title"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/tv_teach_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/dp_10"
+        android:text="完成"
+        android:padding="@dimen/dp_5"
+        android:textColor="@color/black_title"
+        android:textSize="@dimen/sp_16"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_teach_search"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dp_5"
+        android:background="@drawable/ease_common_tab_bg"
+        android:src="@drawable/sousuo" />
+   <!--////////////////////-->
+    <ImageView
+        android:id="@+id/iv_teach_cancel"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/cancel"
+        android:layout_marginRight="@dimen/dp_35"
+        android:background="@drawable/ease_common_tab_bg"
+        android:visibility="gone"
+        />
+
+    <!--2222222222222222-->
+    <ImageView
+        android:id="@+id/iv_shoucang"
+        android:layout_width="@dimen/dp_25"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_5"
+        android:background="@drawable/ease_common_tab_bg"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_teach_teacher"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_48"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/iv_teach_search"
+        android:padding="@dimen/dp_5"
+        android:src="@drawable/sousuo"
+        android:background="@drawable/ease_common_tab_bg"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_teach_up"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dp_5"
+        android:src="@drawable/fengxiang"
+        android:background="@drawable/ease_common_tab_bg"
+        android:visibility="gone" />
+    <ImageView
+        android:id="@+id/iv_teach_help"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dp_10"
+        android:src="@drawable/help"
+        android:background="@drawable/ease_common_tab_bg"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_refresh"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dp_5"
+        android:src="@drawable/refresh"
+        android:background="@drawable/ease_common_tab_bg"
+        android:visibility="gone" />
+
+    <View
+        style="@style/GrayViewStyle"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

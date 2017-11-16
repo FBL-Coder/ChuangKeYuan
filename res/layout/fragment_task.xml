@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/title_bar" />
+
+    <RadioGroup
+        android:id="@+id/rg_taskfragment_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtn_taskfragment_alltask"
+            style="@style/TaskRadioButtonStyle"
+            android:checked="true"
+            android:text="@string/alltask" />
+
+        <RadioButton
+            android:id="@+id/rbtn_taskfragment_finish"
+            style="@style/TaskRadioButtonStyle"
+            android:text="@string/finishtask" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/taskfragment_space"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

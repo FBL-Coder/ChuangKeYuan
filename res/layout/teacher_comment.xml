@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1"
+        android:background="@color/status_view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f2f0eb"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_3498db"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="作品评语"
+                android:textColor="@color/guidbtnnormal"
+                android:textSize="@dimen/sp_18" />
+
+            <TextView
+                android:id="@+id/teacher_commemt_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="@dimen/dp_10"
+                android:text="提交"
+                android:textColor="@color/guidbtnnormal"
+                android:textSize="@dimen/sp_22"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="综合得分"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/wave_progress_bar"
+                android:layout_toStartOf="@+id/wave_progress_bar"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp" />
+
+            <com.yitong.ChuangKeYuan.widget.WaveProgress
+                android:id="@+id/wave_progress_bar"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_80"
+                android:layout_centerHorizontal="true">
+
+            </com.yitong.ChuangKeYuan.widget.WaveProgress>
+
+
+        </RelativeLayout>
+
+        <com.jacksen.taggroup.SuperTagGroup
+            android:id="@+id/tag_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+
+        </com.jacksen.taggroup.SuperTagGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:text="综合评价"
+            android:textSize="@dimen/sp_18" />
+
+        <EditText
+            android:id="@+id/teacher_comment_edittv"
+            android:layout_width="match_parent"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入综合评价"
+            android:minHeight="@dimen/dp_80" />
+
+    </LinearLayout>
+</LinearLayout>

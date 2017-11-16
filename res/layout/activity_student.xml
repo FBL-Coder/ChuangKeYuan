@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_teach" />
+
+    <LinearLayout
+        android:id="@+id/ku_task_yichang"
+        style="@style/AbnormalLinearLayoutStyle">
+
+        <ImageView style="@style/CryImageViewStyle" />
+
+        <TextView
+            style="@style/AbnormalStyle"
+            android:text="@string/abnormal2" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bai"
+            android:orientation="vertical">
+
+            <com.tencent.smtt.sdk.WebView
+                android:id="@+id/classdetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

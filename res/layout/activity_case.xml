@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_teach"/>
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_case_tit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_115"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/RelativeLayoutStyle"
+            android:id="@+id/rl_case_course"
+            android:background="@drawable/selector_build"
+            >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                fresco:roundedCornerRadius="15dp"
+                android:id="@+id/iv_class"
+                style="@style/ImageViewStyle"
+                />
+
+            <TextView
+                android:id="@+id/tv_class_title"
+                style="@style/TextViewTitleStyle"
+                />
+
+            <TextView
+                android:id="@+id/tv_class"
+                style="@style/TextViewDesStyle"
+                 />
+        </RelativeLayout>
+        <View
+            style="@style/GrayViewStyle"
+            />
+        <RelativeLayout
+            style="@style/RelativeLayoutStyle"
+            android:id="@+id/rl_case_note"
+            android:background="@drawable/selector_build"
+            >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                fresco:roundedCornerRadius="15dp"
+                android:id="@+id/iv_teachnote"
+                style="@style/ImageViewStyle"
+                />
+
+            <TextView
+                android:id="@+id/tv_teachnote_title"
+                style="@style/TextViewTitleStyle"
+                />
+
+            <TextView
+                android:id="@+id/tv_teachnote"
+                style="@style/TextViewDesStyle"
+                 />
+        </RelativeLayout>
+        <View
+           style="@style/GrayViewStyle"
+            />
+        <RelativeLayout
+            style="@style/RelativeLayoutStyle"
+            android:id="@+id/rl_case_case"
+            android:background="@drawable/selector_build"
+            >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                fresco:roundedCornerRadius="15dp"
+                android:id="@+id/iv_case"
+                style="@style/ImageViewStyle"
+                />
+
+            <TextView
+                android:id="@+id/tv_case_title"
+                style="@style/TextViewTitleStyle"
+                />
+
+            <TextView
+                android:id="@+id/tv_case"
+                style="@style/TextViewDesStyle"
+                 />
+        </RelativeLayout>
+        <View
+           style="@style/GrayViewStyle"
+            />
+    </LinearLayout>
+</LinearLayout>

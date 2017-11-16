@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_280"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/rect_gray">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/upload_title"
+            style="@style/DialogTextViewStyle"
+            android:background="@color/color_409ed7"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:textColor="@color/bai"
+            android:textSize="@dimen/sp_16"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            style="@style/DialogLinearLayoutStyle">
+
+            <ImageView
+                android:id="@+id/iv1"
+                style="@style/DialogImageViewStyle"
+                 />
+
+            <TextView
+                android:id="@+id/upload_des1"
+                style="@style/DialogTextViewStyle"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v1"
+            style="@style/GrayViewStyle"
+            android:layout_height="0.5dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/upload_btn"
+            style="@style/DialogTextViewStyle"
+            android:gravity="center_horizontal"
+            android:background="@drawable/selector_dialog_btn"
+            />
+    </LinearLayout>
+
+</ScrollView>

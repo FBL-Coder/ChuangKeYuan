@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1_5"
+        android:background="@color/color_eeeeee" />
+
+    <RelativeLayout
+        style="@style/MyRelativeLayoutStyle"
+        android:padding="@dimen/dp_10">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/dp_55"
+            android:layout_height="@dimen/dp_55"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:scaleType="centerCrop"
+            fresco:roundedCornerRadius="@dimen/dp_25" />
+
+        <TextView
+            android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toRightOf="@id/iv_icon"
+            android:textColor="@color/bottom_text_color_normal"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/color_eeeeee" />
+
+    <RelativeLayout style="@style/MyRelativeLayoutStyle">
+
+        <ImageView
+            android:id="@+id/iv_time"
+            style="@style/DialogImageViewStyle"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/MyTextViewStyle"
+            android:layout_toRightOf="@id/iv_time" />
+
+        <TextView
+            android:id="@+id/tv_time1"
+            style="@style/MyInputTextViewStyle" />
+
+        <TextView
+            android:id="@+id/tv_time_default"
+            style="@style/MyInputTextViewStyle"
+            android:text="@string/none" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/color_eeeeee" />
+
+    <RelativeLayout style="@style/MyRelativeLayoutStyle">
+
+        <ImageView
+            android:id="@+id/iv_post"
+            style="@style/DialogImageViewStyle"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_post"
+            style="@style/MyTextViewStyle"
+            android:layout_toRightOf="@id/iv_post" />
+
+        <TextView
+            android:id="@+id/tv_post_dafault"
+            style="@style/MyInputTextViewStyle"
+            android:text="@string/none" />
+
+        <TextView
+            android:id="@+id/tv_post1"
+            style="@style/MyInputTextViewStyle" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/color_eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/rel_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@drawable/selector_dialog_btn">
+
+        <ImageView
+            android:id="@+id/iv_collect"
+            style="@style/DialogImageViewStyle"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_collect"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_10"
+            android:textColor="@color/bottom_text_color_normal"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/color_eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/rel_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@drawable/selector_dialog_btn">
+
+        <ImageView
+            android:id="@+id/iv_comment"
+            style="@style/DialogImageViewStyle"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_comment"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_10"
+            android:textColor="@color/bottom_text_color_normal"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/color_eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/rel_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@drawable/selector_dialog_btn">
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            style="@style/DialogImageViewStyle"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_setting"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_10"
+            android:textColor="@color/bottom_text_color_normal"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/color_eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/rel_chuangkeyuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@drawable/selector_dialog_btn">
+
+        <ImageView
+            android:id="@+id/iv_chuangkeyuan"
+            style="@style/DialogImageViewStyle"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_chuangkeyuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_chuangkeyuan"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_10"
+            android:textColor="@color/bottom_text_color_normal"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/color_eeeeee" />
+
+    <RelativeLayout style="@style/MyRelativeLayoutStyle">
+
+        <ImageView
+            android:id="@+id/iv_versions"
+            style="@style/DialogImageViewStyle"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_versions"
+            style="@style/MyTextViewStyle"
+            android:layout_toRightOf="@id/iv_versions" />
+
+        <TextView
+            android:id="@+id/tv_versions_dafault"
+            style="@style/MyInputTextViewStyle"
+            android:text="@string/version" />
+
+        <TextView
+            android:id="@+id/tv_versions1"
+            style="@style/MyInputTextViewStyle"
+            android:text="asfasd" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1_5"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/color_eeeeee" />
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/em_btn_style_alert_dialog_special"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp_18" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1_5"
+        android:background="@color/color_eeeeee" />
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_aeaeae"
+    android:fitsSystemWindows="true"
+
+    >
+    <LinearLayout
+        android:id="@+id/ku_task_yichang"
+        style="@style/AbnormalLinearLayoutStyle">
+
+        <ImageView
+            style="@style/CryImageViewStyle" />
+
+        <TextView
+            android:id="@+id/ku_tv"
+            style="@style/AbnormalStyle"
+            android:text="@string/abnormal1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_find_pro"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AbnormalLinearLayoutStyle"
+            android:visibility="visible"
+            >
+
+            <ProgressBar
+                android:id="@+id/pb_find_pro"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60" />
+
+            <TextView
+                style="@style/AbnormalStyle"
+                android:layout_centerVertical="true"
+                android:text="@string/abnormal6"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_bar" />
+
+
+        <RelativeLayout
+            android:id="@+id/bodyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <com.malinskiy.superrecyclerview.SuperRecyclerView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_moreProgress="@layout/view_more_progress"
+                app:mainLayoutId="@layout/layout_recyclerview_verticalscroll"
+                app:recyclerClipToPadding="true"
+                app:scrollbarStyle="outsideOverlay" />
+
+            <include
+                layout="@layout/layout_editview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/videoBody"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_200"
+    android:background="@color/black_deep">
+
+    <com.yitong.ChuangKeYuan.friendscircle.widgets.videolist.widget.TextureVideoView
+        android:id="@+id/video_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_deep" />
+
+    <ImageView
+        android:id="@+id/iv_video_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/video_bg"
+        android:scaleType="centerCrop"/>
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/video_progress"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        app:cpb_background_progressbar_color="@color/black_deep"
+        app:cpb_background_progressbar_width="@dimen/dp_3"
+        app:cpb_progressbar_color="@color/colorAccent"
+        app:cpb_progressbar_width="@dimen/dp_3" />
+
+    <ImageView
+        android:id="@+id/iv_video_play"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_video_play" />
+
+</FrameLayout>

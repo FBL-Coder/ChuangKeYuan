@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+        <include layout="@layout/ease_commom_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/diagnose"
+            android:textColor="@color/bai"
+            android:textSize="@dimen/sp_18" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+           style="@style/EmDialogStyle"
+            android:text="@string/Current_version"
+            />
+
+        <TextView
+            android:id="@+id/tv_version"
+            style="@style/EmDialogStyle"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_uploadlog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@color/top_bar_normal_bg"
+        android:text="@string/button_uploadlog"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_18" />
+
+</LinearLayout>

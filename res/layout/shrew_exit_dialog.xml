@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_ll"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/color_eeeeee"
+    android:orientation="vertical">
+
+    <!-- 退出的背景图 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/color_text_selected">
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/sp_10"
+            android:src="@android:drawable/ic_dialog_info"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_3"
+            android:paddingTop="@dimen/dp_3"
+            android:text="提示"
+            android:textColor="@color/guidbtnnormal"
+            android:textSize="@dimen/sp_18" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_mes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="center"
+        android:text="是否退出创客园？"
+        android:textColor="@color/color_444"
+        android:textSize="@dimen/sp_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"><!-- 确认按钮 -->
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/em_button_login_bg"
+            android:padding="@dimen/dp_2"
+            android:text="退出"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:textColor="@color/guidbtnnormal"
+            android:textSize="@dimen/dp_18" />
+
+        <!-- 取消按钮 -->
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/em_button_login_bg"
+            android:padding="@dimen/dp_2"
+            android:text="取消"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:textColor="@color/guidbtnnormal"
+            android:textSize="@dimen/dp_18" />
+    </LinearLayout>
+
+</LinearLayout>

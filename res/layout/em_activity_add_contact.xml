@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2f2f2"
+    android:orientation="vertical" >
+
+
+     <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical">
+
+        <include layout="@layout/ease_commom_back_btn" />
+
+        <TextView
+            android:id="@+id/add_list_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/guidbtnpressed"
+            android:textSize="@dimen/sp_18" />
+        
+        <Button
+            android:id="@+id/search"
+            android:layout_width="@dimen/dp_55"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ease_common_tab_bg"
+            android:onClick="searchContact"
+            android:text="@string/button_search"
+            android:textColor="@color/guidbtnpressed"
+            android:textSize="@dimen/sp_16" />
+         <ImageView
+             android:id="@+id/saosao"
+             android:layout_toLeftOf="@+id/search"
+             android:layout_width="@dimen/dp_40"
+             android:layout_height="@dimen/dp_40"
+             android:layout_marginTop="@dimen/dp_5"
+             android:src="@drawable/saosao"
+             android:onClick="saosaoClick"
+             />
+    </RelativeLayout>
+    <View
+       style="@style/GrayViewStyle"/>
+
+    <EditText
+        android:id="@+id/edit_note"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_margin="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_5"
+        android:background="@drawable/em_button_normal_shape"
+        android:hint="@string/user_name"
+        android:singleLine="true"
+        android:textColorHint="@color/color_b3b3b3"
+        android:textSize="@dimen/sp_18" />
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ease_mm_listitem"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:duplicateParentState="true" >
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_45"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:scaleType="fitXY"
+                android:src="@drawable/em_default_avatar" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_toRightOf="@id/avatar"
+                android:textColor="@color/color_0F0F0F"
+                android:textSize="@dimen/sp_16" />
+
+
+            <Button
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_35"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/em_button_bg"
+                android:onClick="addContact"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingRight="@dimen/dp_12"
+                android:text="@string/button_add"
+                android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

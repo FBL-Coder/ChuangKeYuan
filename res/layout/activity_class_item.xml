@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/title_teach" />
+
+            <com.yitong.ChuangKeYuan.widget.SuperSwipeRefreshLayout
+                android:id="@+id/ssrl_class_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:id="@+id/scrollview_class_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <com.facebook.drawee.view.SimpleDraweeView
+                            android:id="@+id/simpledraweeview_class_item"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_140" />
+
+                        <com.yitong.ChuangKeYuan.widget.MyListView
+                            android:id="@+id/lv_class_item"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scrollbars="none" />
+                    </LinearLayout>
+                </ScrollView>
+            </com.yitong.ChuangKeYuan.widget.SuperSwipeRefreshLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ku_class_yichang"
+            style="@style/AbnormalLinearLayoutStyle">
+
+            <ImageView style="@style/CryImageViewStyle" />
+
+            <TextView
+                style="@style/AbnormalStyle"
+                android:text="@string/abnormal1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ku_class_nodata"
+            style="@style/AbnormalLinearLayoutStyle">
+
+            <ImageView style="@style/CryImageViewStyle" />
+
+            <TextView
+                style="@style/AbnormalStyle"
+                android:text="@string/abnormal2" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/class_item_add"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:src="@drawable/add_wenzhang"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:visibility="gone"
+        />
+</FrameLayout>

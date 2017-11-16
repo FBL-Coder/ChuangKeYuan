@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:background="@color/top_bar_normal_bg"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="match_parent"
+            android:background="@drawable/ease_common_tab_bg"
+            android:onClick="back" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:scaleType="centerInside"
+                android:src="@drawable/back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/bottom_text_color_normal"
+            android:textSize="@dimen/sp_20" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_8" />
+    </RelativeLayout>
+    <View
+        style="@style/GrayViewStyle"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f2f0eb"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+
+            <com.easemob.easeui.widget.EaseExpandGridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_12"
+                android:background="@drawable/em_app_pref_bg"
+                android:gravity="start"
+                android:horizontalSpacing="@dimen/dp_5"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:verticalSpacing="@dimen/dp_10" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/color_E6E6E6" />
+
+            <RelativeLayout
+                android:id="@+id/rl_group_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_group_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:text="@string/group_id"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_18"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/tv_group_id_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_20" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@color/color_E6E6E6" />
+            </RelativeLayout>
+			<RelativeLayout
+                android:id="@+id/rl_group_nick"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:visibility="gone" >
+
+                <TextView
+                	android:id="@+id/tv_group_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:text="@string/group_nick"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_18"
+                    android:typeface="serif" />
+                
+                  <TextView 
+                    android:id="@+id/tv_group_nick_value"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_group_nick"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:textSize="@dimen/sp_18"
+                    /> 
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@color/color_E6E6E6" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_group_owner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:visibility="gone" >
+
+                <TextView
+                	android:id="@+id/tv_group_owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:text="@string/group_owner"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_18"
+                    android:typeface="serif" />
+                
+                  <TextView 
+                    android:id="@+id/tv_group_owner_value"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_group_owner"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:textSize="@dimen/sp_18"
+                    /> 
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@color/color_E6E6E6" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/clear_all_history"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@drawable/em_btn_bottom_selector" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:text="@string/Empty_the_chat_record"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_18"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@color/color_E6E6E6" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_change_group_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@drawable/em_btn_bottom_selector" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:text="@string/Change_the_group_name"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_18"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@color/color_E6E6E6" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_blacklist"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@drawable/em_btn_bottom_selector" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:text="@string/blacklist"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_18"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@color/color_E6E6E6" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_switch_block_groupmsg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/em_btn_bottom_selector"
+                android:padding="@dimen/dp_10" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:text="@string/Shielding_of_the_message"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_18"
+                    android:typeface="serif" />
+
+                <com.easemob.easeui.widget.EaseSwitchButton
+                    android:id="@+id/switch_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    app:switchStatus="close"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@color/color_E6E6E6" />
+
+            <Button
+                android:id="@+id/btn_exit_grp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:background="@drawable/em_btn_style_alert_dialog_special"
+                android:onClick="exitGroup"
+                android:paddingBottom="@dimen/dp_8"
+                android:paddingTop="@dimen/dp_8"
+                android:text="@string/Exit_the_group_chat"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_18" />
+
+            <Button
+                android:id="@+id/btn_exitdel_grp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@drawable/em_btn_style_alert_dialog_special"
+                android:onClick="exitDeleteGroup"
+                android:paddingBottom="@dimen/dp_8"
+                android:paddingTop="@dimen/dp_8"
+                android:text="@string/dismiss_group"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_18"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/selector_list_item"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_eeeeee"
+        >
+        <TextView
+            android:id="@+id/listview_item_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/color_34495e"
+            android:textSize="@dimen/sp_16"
+            android:padding="@dimen/dp_10"
+             />
+        <ImageView
+            android:id="@+id/listview_item_imageview"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:background="@drawable/em_right_arrow_icon"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+    <com.yitong.ChuangKeYuan.widget.NoScrollGridView
+        android:id="@+id/listview_item_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/dp_5"
+        android:horizontalSpacing="@dimen/dp_8"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
+        android:focusable="false"
+        android:numColumns="2"/>
+</LinearLayout>

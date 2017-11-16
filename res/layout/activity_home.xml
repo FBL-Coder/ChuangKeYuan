@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_48"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:id="@+id/rg_bg"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dibulan"
+        android:layout_height="@dimen/dp_60">
+
+        <RadioGroup
+            android:id="@+id/rg_homeactivity_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtn_homeactivity_home"
+                style="@style/RadioButtonStyle"
+                android:checked="true"
+                android:drawableTop="@drawable/selector_home_tv_home"
+                android:text="@string/radiobutton_home" />
+
+            <RadioButton
+                android:id="@+id/rbtn_homeactivity_find"
+                style="@style/RadioButtonStyle"
+                android:drawableTop="@drawable/selector_home_tv_show"
+                android:text="@string/radiobutton_find" />
+
+            <Button
+                android:id="@+id/rbtn_homeactivity_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/tongxunlu"
+                android:text="@string/radiobutton_adress"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_10" />
+
+            <RadioButton
+                android:id="@+id/rbtn_homeactivity_task"
+                style="@style/RadioButtonStyle"
+                android:drawableTop="@drawable/selector_home_tv_renwu"
+                android:text="@string/radiobutton_task" />
+
+            <RadioButton
+                android:id="@+id/rbtn_homeactivity_my"
+                style="@style/RadioButtonStyle"
+                android:drawableTop="@drawable/selector_home_tv_my"
+                android:text="@string/radiobutton_my" />
+
+        </RadioGroup>
+
+
+        <ImageView
+            android:id="@+id/iv_address_mes"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_10"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_34"
+            android:paddingLeft="@dimen/dp_30"
+            android:paddingRight="@dimen/dp_5"
+            android:src="@drawable/em_unread_count_bg"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_find_mes"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_10"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_34"
+            android:layout_toLeftOf="@id/iv_address_mes"
+            android:paddingRight="@dimen/dp_30"
+            android:src="@drawable/em_unread_count_bg"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

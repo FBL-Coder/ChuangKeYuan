@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        style="@style/CommonImageViewStyle"
+        android:id="@+id/iv_school"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+         <RelativeLayout
+            style="@style/RelativeLayoutStyle"
+            android:id="@+id/rl_school_material"
+            android:background="@drawable/selector_build"
+            >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                style="@style/ImageViewStyle"
+                android:id="@+id/iv_material"
+                />
+
+            <TextView
+                style="@style/TextViewTitleStyle"
+                android:id="@+id/tv_material"
+                />
+
+            <TextView
+                style="@style/TextViewDesStyle"
+                android:id="@+id/tv_material1"
+                />
+        </RelativeLayout>
+        <View
+            style="@style/GrayViewStyle"
+            />
+        <RelativeLayout
+            style="@style/RelativeLayoutStyle"
+            android:id="@+id/rl_school_diy"
+            android:background="@drawable/selector_build"
+            >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                style="@style/ImageViewStyle"
+                android:id="@+id/iv_diy"
+                 />
+
+            <TextView
+                style="@style/TextViewTitleStyle"
+                android:id="@+id/tv_diy"
+                />
+
+            <TextView
+                style="@style/TextViewDesStyle"
+                android:id="@+id/tv_diy1"
+                />
+        </RelativeLayout>
+        <View
+            style="@style/GrayViewStyle"
+            />
+        <RelativeLayout
+            style="@style/RelativeLayoutStyle"
+            android:id="@+id/rl_school_case"
+            android:background="@drawable/selector_build"
+            >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                style="@style/ImageViewStyle"
+                android:id="@+id/iv_case"
+                />
+
+            <TextView
+                style="@style/TextViewTitleStyle"
+                android:id="@+id/tv_case"
+                />
+
+            <TextView
+                style="@style/TextViewDesStyle"
+                android:id="@+id/tv_case1"
+                 />
+        </RelativeLayout>
+        <View
+            style="@style/GrayViewStyle"
+            />
+    </LinearLayout>
+</LinearLayout>

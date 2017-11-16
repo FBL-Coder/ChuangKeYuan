@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_teach" />
+
+        <com.yitong.ChuangKeYuan.widget.SuperSwipeRefreshLayout
+            android:id="@+id/SwipeRefreshLayout_study"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:id="@+id/scrollview_study_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.yitong.ChuangKeYuan.widget.MyListView
+                        android:id="@+id/lv_study"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0"
+                        android:layout_weight="1"
+                        android:scrollbars="none" />
+                </LinearLayout>
+            </ScrollView>
+        </com.yitong.ChuangKeYuan.widget.SuperSwipeRefreshLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ku_xue_yichang"
+       style="@style/AbnormalLinearLayoutStyle">
+
+        <ImageView
+            style="@style/CryImageViewStyle" />
+
+        <TextView
+            style="@style/AbnormalStyle"
+            android:text="@string/abnormal1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ku_xue_nodata"
+        style="@style/AbnormalLinearLayoutStyle">
+
+        <ImageView
+            style="@style/CryImageViewStyle" />
+
+        <TextView
+            style="@style/AbnormalStyle"
+            android:text="@string/abnormal2" />
+    </LinearLayout>
+</RelativeLayout>

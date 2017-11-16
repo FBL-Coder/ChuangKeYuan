@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_8"
+    android:paddingBottom="@dimen/dp_8"
+    android:background="#ededed"
+    android:paddingLeft="@dimen/dp_5"
+    android:paddingRight="@dimen/dp_5">
+
+    <EditText
+      	android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_5"
+        android:id="@+id/query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ease_seabar_input"
+        android:drawableLeft="@drawable/ease_search_bar_icon_normal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#8C8C8C"
+        android:textSize="@dimen/sp_16"
+        android:hint="@string/search"
+        android:layout_marginLeft="@dimen/dp_4"
+        android:layout_marginRight="@dimen/dp_4"
+        android:singleLine="true"/>
+
+    <ImageButton
+        android:id="@+id/search_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_3"
+        android:background="@android:color/transparent"
+        android:padding="6dp"
+        android:src="@drawable/ease_search_clear"
+        android:visibility="invisible" />
+
+</RelativeLayout>
