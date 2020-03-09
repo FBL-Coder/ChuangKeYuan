@@ -120,6 +120,8 @@ public class GetFilePath {
                 final int index = cursor.getColumnIndexOrThrow(column);
                 return cursor.getString(index);
             }
+        } catch (Exception e) {
+            return null;
         } finally {
             if (cursor != null)
                 cursor.close();

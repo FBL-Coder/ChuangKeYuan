@@ -511,14 +511,21 @@ public class ArticleDetailActivity extends Activity implements OnClickListener {
                             intent.putExtra("aid", getIntent().getStringExtra("aid"));
                             startActivityForResult(intent, 0);
                         } else {
-                            mFen.setVisibility(View.VISIBLE);
-                            comment_iv.setVisibility(View.GONE);
-                            mCancel.setVisibility(View.VISIBLE);
+//                            mFen.setVisibility(View.VISIBLE);
+//                            comment_iv.setVisibility(View.GONE);
+//                            mCancel.setVisibility(View.VISIBLE);
+                            Intent intent = new Intent(this, AddCommentActivity.class);
+                            intent.putExtra("aid",getIntent().getStringExtra("aid"));
+                            startActivity(intent);
+
                         }
                     } else {
-                        mFen.setVisibility(View.VISIBLE);
-                        comment_iv.setVisibility(View.GONE);
-                        mCancel.setVisibility(View.VISIBLE);
+//                        mFen.setVisibility(View.VISIBLE);
+//                        comment_iv.setVisibility(View.GONE);
+//                        mCancel.setVisibility(View.VISIBLE);
+                        Intent intent = new Intent(this, AddCommentActivity.class);
+                        intent.putExtra("aid",getIntent().getStringExtra("aid"));
+                        startActivity(intent);
                     }
                 } else {
                     Toast.makeText(ArticleDetailActivity.this, "对不起，您还没有登录...", Toast.LENGTH_SHORT).show();

@@ -1,23 +1,32 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     repositories {
+        google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.0'
+        classpath 'com.android.tools.build:gradle:3.0.1'
         classpath 'com.novoda:bintray-release:0.3.4'
     }
 }
 
 allprojects {
     repositories {
+        google()
         jcenter()
     }
 }
 
 apply plugin: 'com.android.application'
 
+
 android {
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
     compileSdkVersion 22
     buildToolsVersion '22.0.0'
 
@@ -31,6 +40,8 @@ android {
             abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
         }
     }
+
+
 
 
     dexOptions {
@@ -84,7 +95,7 @@ android {
 
 dependencies {
     compile fileTree(include: '*.jar', exclude: 'android-support-multidex.jar', dir: 'libs')
-    compile files('libs/core.jar')
+//    compile files('libs/core.jar')
     compile files('libs/zxing.jar')
     compile files('libs/universal-image-loader-1.9.4.jar')
     //compile files('libs/universal-image-loader-1.9.4.jar')
@@ -95,12 +106,12 @@ dependencies {
     compile('com.github.bumptech.glide:okhttp3-integration:1.4.0') {
         exclude group: 'glide-parent'
     }
-    compile 'com.android.support:support-v4:23.3.0'
+    //noinspection GradleCompatible
+    compile 'com.android.support:support-v4:22.2.1'
     compile 'com.malinskiy:superrecyclerview:1.1.4'
     compile 'com.github.ptomli.spring-integration-version:spring-integration-version:3.0.1.RELEASE'
     compile 'com.google.android.gms:play-services-appindexing:8.1.0'
     compile 'org.kie.modules:com-google-code-gson:6.4.0.Final'
-    compile files('libs/gson-2.2.4.jar')
     compile 'com.facebook.fresco:fresco:0.11.0'
     compile 'at.pardus.android:webview-gm-ui:1.2.0'
     //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.2.0
